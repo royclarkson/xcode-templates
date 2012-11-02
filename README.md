@@ -5,11 +5,11 @@ A Ruby shell script for generating custom Xcode templates
 
 ## Overview
 
-If you are developing an open source project you may want to release it under the Apache Software License v2.0. This script will help you generate templates preconfigured with a specific license, so you don't have to keep cutting and pasting that information into your code. It will copy the default templates from within the Xcode bundle, then update the header of each template with the specified license.
+Often when working with Xcode you may want to replace the default file heading with something else, maybe a license, or maybe more description about the project. This script will help you generate templates preconfigured with a specific license or heading, so you don't have to keep cutting and pasting that information into your code. It copies the default templates from within the Xcode bundle, then updates the header of each template with the specified license.
 
 ## Prerequisites
 
-It is expected that you are on a Mac, running OS X, that you have the latest version of Xcode installed (4.5.1 as of this writing), and also are running Ruby 1.8.7 or newer.
+It is expected that you are on a Mac, running OS X, that you have the latest version of Xcode installed (4.5.2 as of this writing), and also are running Ruby 1.8.7 or newer.
 
 ## Usage
 
@@ -31,7 +31,7 @@ The templates are copied to the "staging" folder. Within that is a folder called
 
 	~/Library/Developer/Xcode/Templates/
 
-Please note that the script is capable of copying the generated templates into this location, but it is a limited implementation that simply erases any existing templates first. Since this is not always desirable, that functionality has been commented out.
+Please note that the script is capable of copying the generated templates into this location, but it is a limited implementation that simply erases any existing templates first. Since this is not always desirable, that functionality has been commented out until it can be improved.
 	
 ## Using the Templates to Create a New File
 	
