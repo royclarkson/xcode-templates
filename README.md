@@ -49,18 +49,10 @@ If you would like to share your header file with others, then feel free to submi
 
 I only spent a couple hours coding and manually testing this script. It does what I need it to do, but not much more. There are many areas for improvement and expansion, like tests! Pull requests are welcome.
 
+## Copyright
+
+Copyright (c) 2012-2013, Roy Clarkson. All Rights Reserved.
+
 ## License
 
-Copyright 2012 Roy Clarkson
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
+Licensed under version 2.0 of the [Apache License](http://www.apache.org/licenses/LICENSE-2.0).
