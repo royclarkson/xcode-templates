@@ -31,7 +31,7 @@ The templates are copied to the "staging" folder. Within that is a folder called
 
 	~/Library/Developer/Xcode/Templates/
 
-Please note that the script is capable of copying the generated templates into this location, but it is a limited implementation that simply erases any existing templates first. Since this is not always desirable, that functionality has been commented out until it can be improved.
+> **Note:** the script is capable of copying the generated templates into this location, but it is a limited implementation that simply erases any existing templates first. Since this is not always desirable, that functionality has been commented out until it can be improved.
 	
 ## Using the Templates to Create a New File
 	
@@ -39,7 +39,7 @@ When you select to add a new file you will see the new templates available as op
 
 ![<File Templates>](<https://raw.github.com/royclarkson/xcode-templates/master/templates.png>)
 
-## Adding new License Files
+## Adding New Header Files
 
 This is very easy to do. Simply create a new text document in the project root with a descriptive name. For example you may want to use the BSD license, so create a BSD.txt and place it in the root of the project along side the ASL and MIT files. See the ASL and MIT files for inspiration. Once you have created a new file you can run the script, passing the name as a command line argument.
 
