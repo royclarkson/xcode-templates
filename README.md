@@ -21,7 +21,7 @@ Now you can simply run the script from your shell prompt. The default implementa
 
 	./xctemplates.rb
 	
-You can also specify an alternate header file to use by passing a command line argument. The argument must match the name of a text file within the same directory. Currently, only ASL and MIT text files are provided.
+You can also specify an alternate header file to use by passing a command line argument. The argument must match the name of a text file within the same directory. Currently, only ASL, GPLv2 and MIT text files are provided.
 
 	./xctemplates.rb MIT
 
