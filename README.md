@@ -16,19 +16,19 @@ It is expected that you are on a Mac, running OS X, that you have the latest ver
 The script is executed from the command line, so the first step is to verify the script can be executed. Run the following command to make it executable.
 
 ```sh
-chmod +x xctemplates.rb
+$ chmod +x xctemplates.rb
 ```
 	
 Now you can simply run the script from your shell prompt. The default implementation generates templates with the Apache Software License (ASL) header.
 
 ```sh
-./xctemplates.rb
+$ ./xctemplates.rb
 ```
 	
 You can also specify an alternate header file to use by passing a command line argument. The argument must match the name of a text file within the same directory. Currently, only ASL, GPLv2 and MIT text files are provided.
 
 ```sh
-./xctemplates.rb MIT
+$ ./xctemplates.rb MIT
 ```
 
 ## Installing the Templates
@@ -45,7 +45,7 @@ The templates are copied to the "staging" folder. Within that is a folder called
 	
 When you select to add a new file you will see the new templates available as options within Xcode.
 
-![<File Templates>](<https://raw.github.com/royclarkson/xcode-templates/master/templates.png>)
+![<File Templates>](templates.png)
 
 ## Adding New Header Files
 
