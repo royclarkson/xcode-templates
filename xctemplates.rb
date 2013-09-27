@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-# Copyright 2012 Roy Clarkson
+# Copyright 2012-2013 Roy Clarkson
 # 
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -68,7 +68,11 @@ new_header = File.read(license_file)
 Dir.glob(templates + '/**/*').each { |f| 
   if (File.file?(f))
     puts "Processing file..."
-    text = File.read(f)
+    text = File.read(f)    
+    if String.method_defined?(:encode)
+      text.encode!('UTF-16', 'UTF-8', :invalid => :replace, :replace => '')
+      text.encode!('UTF-8', 'UTF-16')
+    end
     updated_text = text.gsub(original_header, new_header)
     File.open(f, "w") { |file| 
       file.puts updated_text 
@@ -76,12 +80,12 @@ Dir.glob(templates + '/**/*').each { |f|
       }
   end
   }
-  
+
 # dest = File.expand_path('~/Library/Developer/Xcode/Templates')
 # if File.exists? dest
 #   puts "Removing user's existing templates directory..."
 #   FileUtils.rm_rf dest
 # end
-# 
+#
 # puts "Copying to user's templates directory..."
 # FileUtils.cp_r staging, dest
