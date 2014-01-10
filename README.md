@@ -33,10 +33,10 @@ $ ./xctemplates.rb MIT
 
 ## Installing the Templates
 
-The templates are copied to the "staging" folder. Within that is a folder called "File Templates". Move or copy the generated "File Templates" folder and its contents into the following location:
+The templates are copied to the "staging" folder. Within that is a folder called "File Templates". Copy the generated "File Templates" folder and its contents into the following location:
 
 ```sh
-~/Library/Developer/Xcode/Templates/
+$ cp -R staging ~/Library/Developer/Xcode/Templates
 ```
 
 > **Note:** the script is capable of copying the generated templates into this location, but it is a limited implementation that simply erases any existing templates first. Since this is not always desirable, that functionality has been commented out until it can be improved.
