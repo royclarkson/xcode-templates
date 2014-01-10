@@ -59,7 +59,7 @@ I only spent a couple hours coding and manually testing this script. It does wha
 
 ## Copyright
 
-Copyright (c) 2012-2013, Roy Clarkson. All Rights Reserved.
+Copyright (c) 2012-2014, Roy Clarkson. All Rights Reserved.
 
 ## License
 
