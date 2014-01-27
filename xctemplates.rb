@@ -32,7 +32,7 @@ if File.exists? staging
   FileUtils.rm_rf staging
 end
 
-license_file = license + '.txt'
+license_file = 'templates/' + license + '.txt'
 if !File.exists? license_file
   puts "License file not found!"
   exit
@@ -63,7 +63,7 @@ Dir.glob(templates + '/**/*').each { |f|
   }
 
 puts "Updating file headers..."
-original_header = File.read('original_header.txt')
+original_header = File.read('templates/original_header.txt')
 new_header = File.read(license_file)
 Dir.glob(templates + '/**/*').each { |f| 
   if (File.file?(f))
@@ -86,6 +86,6 @@ Dir.glob(templates + '/**/*').each { |f|
 #   puts "Removing user's existing templates directory..."
 #   FileUtils.rm_rf dest
 # end
-#
+# 
 # puts "Copying to user's templates directory..."
 # FileUtils.cp_r staging, dest
