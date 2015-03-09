@@ -31,31 +31,45 @@ You can also specify an alternate header file to use by passing a command line a
 $ ./xctemplates.rb MIT
 ```
 
-## Installing the Templates
+## Install the Templates
 
-The templates are copied to the `staging` folder. Within that is a folder called `File Templates`. Copy the generated `File Templates` folder and its contents into the following location:
+The templates are copied to the `staging` folder. Within that is a folder called `File Templates`. Use the following script to copy the generated `File Templates` folder and its contents into `~/Library/Developer/Xcode/Templates`:
+
+```sh
+./copy-templates.rb
+```
+
+Alternatively, you may use the following command:
 
 ```sh
 $ cp -R staging ~/Library/Developer/Xcode/Templates
 ```
 
 > **Note:** the script is capable of copying the generated templates into this location, but it is a limited implementation that simply erases any existing templates first. Since this is not always desirable, that functionality has been commented out until it can be improved.
+
+## Delete the Templates
+
+Use the following script to delete the contents from `~/Library/Developer/Xcode/Templates`:
+
+```sh
+./delete-templates.rb
+```
 	
-## Using the Templates to Create a New File
+## Use the Templates to Create a New File
 	
 When you select to add a new file you will see the new templates available as options within Xcode.
 
 ![<File Templates>](images/templates.png)
 
-## Adding New Header Files
+## Add New Header Files
 
 This is very easy to do. Simply create a new text document in the `templates` folder with a descriptive name. For example you may want to use the BSD license, so create a `BSD.txt` and place it in the `templates` folder along side the ASL and MIT files. See the ASL and MIT files for inspiration. Once you have created a new file you can run the script, passing the name as a command line argument.
 
 If you would like to share your header file with others, then feel free to submit a pull request and I will include it in the project.
 
-## Contributing to the Project
+## Contribute
 
-I only spent a couple hours coding and manually testing this script. It does what I need it to do, but not much more. There are many areas for improvement and expansion, like tests! Pull requests are welcome.
+I only invested a couple hours coding and manually testing this script. It does what I need it to do, but not much more. There are many areas for improvement and expansion, like tests! Pull requests are welcome.
 
 ## Copyright
 
