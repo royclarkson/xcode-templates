@@ -9,7 +9,7 @@ Often when working with Xcode you may want to replace the default file heading w
 
 ## Prerequisites
 
-It is expected that you are on a Mac, running OS X, that you have the latest version of Xcode installed (5.0 as of this writing), and also are running Ruby 1.9.3 or newer.
+It is expected that you are on a Mac, running OS X, that you have the latest version of Xcode installed (6.1.1 as of this writing), and also are running Ruby 1.9.3 or newer.
 
 ## Usage
 

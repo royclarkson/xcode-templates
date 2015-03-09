@@ -44,10 +44,8 @@ FileUtils.mkdir_p templates
 puts "Copying templates from Xcode..."
 
 dir_format = ' (' + license + ')'
-FileUtils.cp_r '/Applications/Xcode.app/Contents/Developer/Library/Xcode/Templates/File Templates/C and C++', templates + '/C and C++' + dir_format
-FileUtils.cp_r '/Applications/Xcode.app/Contents/Developer/Library/Xcode/Templates/File Templates/Cocoa', templates + '/Cocoa' + dir_format
 FileUtils.cp_r '/Applications/Xcode.app/Contents/Developer/Library/Xcode/Templates/File Templates/Core Data', templates + '/Core Data' + dir_format
-FileUtils.cp_r '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Templates/File Templates/Cocoa Touch', templates + '/Cocoa Touch' + dir_format
+FileUtils.cp_r '/Applications/Xcode.app/Contents/Developer/Library/Xcode/Templates/File Templates/Source', templates + '/Source' + dir_format
 
 puts "Updating directories..."
 Dir.glob(templates + '/**/*').each { |f| 
