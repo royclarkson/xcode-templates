@@ -63,7 +63,7 @@ Dir.glob(templates + '/**/*').each { |f|
 puts "Updating file headers..."
 original_header = File.read('templates/original_header.txt')
 new_header = File.read(license_file)
-Dir.glob(templates + '/**/*').each { |f| 
+Dir.glob(templates + '/**/*[!png]').each { |f| 
   if (File.file?(f))
     puts "Processing file..."
     text = File.read(f)    
