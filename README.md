@@ -1,15 +1,15 @@
 Xcode Templates
 ===============
 
-A Ruby shell script for generating custom Xcode templates 
+A Ruby shell script for generating custom Xcode templates
 
 ## Overview
 
-Often when working with Xcode you may want to replace the default file heading with something else, maybe a license, or maybe more description about the project. This script will help you generate templates preconfigured with a specific license or heading, so you don't have to keep cutting and pasting that information into your code. It copies the default templates from within the Xcode bundle, then updates the header of each template with the specified license.
+Often when working with Xcode you may want to replace the default file heading with something else, maybe a license, or maybe more description about the project. This script will help you generate templates that are preconfigured with a specific heading, so you are no longer are required to copy and paste that information into your code. It copies the default templates from within the Xcode app bundle, then updates the header of each template with the specified license.
 
 ## Prerequisites
 
-It is expected that you are on a Mac, running OS X, that you have the latest version of Xcode installed (6.1.1 as of this writing), and also are running Ruby 1.9.3 or newer.
+It is expected that you are on a Mac, running OS X, that you have the latest version of Xcode installed (7.1.1 as of this writing), and also are running Ruby 1.9.3 or newer.
 
 ## Usage
 
@@ -18,13 +18,13 @@ The script is executed from the command line, so the first step is to verify the
 ```sh
 chmod +x xctemplates.rb
 ```
-	
+
 Now you can simply run the script from your shell prompt. The default implementation generates templates with the Apache Software License (ASL) header.
 
 ```sh
 ./xctemplates.rb
 ```
-	
+
 You can also specify an alternate header file to use by passing a command line argument. The argument must match the name of a text file within the `templates` folder. Currently, only ASL, GPLv2 and MIT text files are provided.
 
 ```sh
@@ -54,9 +54,9 @@ Use the following script to delete the contents from `~/Library/Developer/Xcode/
 ```sh
 ./delete-templates.rb
 ```
-	
+
 ## Use the Templates to Create a New File
-	
+
 When you select to add a new file you will see the new templates available as options within Xcode.
 
 ![<File Templates>](images/templates.png)
