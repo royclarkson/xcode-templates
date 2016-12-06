@@ -25,7 +25,7 @@ Now you can simply run the script from your shell prompt. The default implementa
 ./xctemplates.rb
 ```
 
-You can also specify an alternate header file to use by passing a command line argument. The argument must match the name of a text file within the `templates` folder. Currently, only ASL, GPLv2 and MIT text files are provided.
+You can also specify an alternate header file to use by passing a command line argument. The argument must match the name of a text file within the `templates` folder. Currently, ASL, GPLv2, GPLv3, MPLv2 and MIT text files are provided.
 
 ```sh
 ./xctemplates.rb MIT
@@ -63,7 +63,7 @@ When you select to add a new file you will see the new templates available as op
 
 ## Add New Header Files
 
-This is very easy to do. Simply create a new text document in the `templates` folder with a descriptive name. For example you may want to use the BSD license, so create a `BSD.txt` and place it in the `templates` folder along side the ASL and MIT files. See the ASL and MIT files for inspiration. Once you have created a new file you can run the script, passing the name as a command line argument.
+This is very easy to do. Simply create a new text document in the `templates` folder with a descriptive name. For example you may want to use the BSD license, so create a `BSD.txt` and place it in the `templates` folder along side the existing files. See the ASL and MIT files for inspiration. Once you have created a new file you can run the script, passing the name as a command line argument.
 
 If you would like to share your header file with others, then feel free to submit a pull request and I will include it in the project.
 
